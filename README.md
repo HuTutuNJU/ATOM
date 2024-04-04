@@ -106,7 +106,7 @@ The parameter `--k` means the label combination dimension, `--dataset` means the
 
 ## Result Analysis
 
-1. Calculate the information related to the training and validation sets of VOC and COCO required for RQ1-RQ3 and save it in `data/info/trainval_info`: `cd rqs & python gen_trainval_info.py`.
+1. Calculate the information related to the training and validation sets of VOC and COCO required for RQ1-RQ3 and save it in `data/info/trainval_info`: `cd tests & python gen_trainval_info.py`.
 2. Integrate the test results with the information in `data/info` to obtain the data required for RQ1-RQ3, and save the results in `data/info/all_info`: `cd rqs & python integrate_data.py`.
 3. Generate tables required for RQ1-RQ3 and save them in `data`: `cd rqs & python rqs.py`. Or use `python rqs.py rq1`, `python rqs.py rq2`, `python rqs.py rq3` to generate the required information separately.
 4. Calculate the Cohen’s Kappa of all people's annotations: `cd rqs & python kappa.py`.
